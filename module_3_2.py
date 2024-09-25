@@ -1,6 +1,6 @@
 def send_email(massage, recipient, sender = "university.help@gmail.com"):
-    if (f'@' and ('.com' or '.ru' or '.net')) not in (recipient or sender):
-        print("Невозможно отправить письмо с адреса {sender} на адрес {recipient}")
+    if ('@' and ('.com' or '.ru' or '.net')) not in (recipient or sender):
+        print(f"Невозможно отправить письмо с адреса {sender} на адрес {recipient}")
     elif sender == recipient:
         print("Нельзя отправить письмо самому себе!")
     elif sender == "university.help@gmail.com":
